@@ -259,9 +259,9 @@ namespace MediaBrowser.Plugins.TWiT
                     Id = i.link,
                     Type = ChannelItemType.Media,
                     DateCreated = !String.IsNullOrEmpty(i.pubDate) ?
-                        Convert.ToDateTime(i.pubDate) : (DateTime?)null,
+                        Convert.ToDateTime(i.pubDate) : (DateTimeOffset?)null,
                     PremiereDate = !String.IsNullOrEmpty(i.pubDate) ?
-                        Convert.ToDateTime(i.pubDate) : (DateTime?)null,
+                        Convert.ToDateTime(i.pubDate) : (DateTimeOffset?)null,
                     Overview = i.summary,
                 });
             }
